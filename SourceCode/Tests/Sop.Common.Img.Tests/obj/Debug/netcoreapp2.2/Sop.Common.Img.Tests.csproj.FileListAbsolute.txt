@@ -1,0 +1,4 @@
+E:\_AAA\csharphelp\Sop.Common.Img\SourceCode\Tests\Sop.Common.Img.Tests\obj\Debug\netcoreapp2.2\Sop.Common.Img.Tests.csprojAssemblyReference.cache
+E:\_AAA\csharphelp\Sop.Common.Img\SourceCode\Tests\Sop.Common.Img.Tests\obj\Debug\netcoreapp2.2\Sop.Common.Img.Tests.csproj.CoreCompileInputs.cache
+E:\_AAA\csharphelp\Sop.Common.Img\SourceCode\Tests\Sop.Common.Img.Tests\obj\Debug\netcoreapp2.2\Sop.Common.Img.Tests.AssemblyInfoInputs.cache
+E:\_AAA\csharphelp\Sop.Common.Img\SourceCode\Tests\Sop.Common.Img.Tests\obj\Debug\netcoreapp2.2\Sop.Common.Img.Tests.AssemblyInfo.cs

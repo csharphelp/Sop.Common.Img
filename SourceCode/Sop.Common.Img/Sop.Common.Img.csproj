@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;net461;net45;</TargetFrameworks>
+        <LangVersion>latest</LangVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <Version>1.2.1</Version>
+        <Authors>sopcce@hotmail.com;</Authors>
+        <Copyright>Copyright 2019 sopcce.com</Copyright>
+        <PackageId>Sop.Common.Serialization</PackageId>
+		<Title>Title</Title>		
+		<Summary>zh</Summary>
+		 
+        <Description>Sop.Common.Serialization
+JSON和xml相关的工具类，后续不断完善</Description>
+        <PackageTags>dotnetcore;c#;json</PackageTags>
+        <PackageProjectUrl>https://github.com/Sopcce/.Net-Common-Utility</PackageProjectUrl>
+        <PackageIconUrl>https://raw.githubusercontent.com/Sopcce/.Net-Common-Utility/master/favicon.png</PackageIconUrl>
+        <RepositoryUrl>https://github.com/Sopcce/.Net-Common-Utility</RepositoryUrl>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <PackageLicenseUrl>https://github.com/Sopcce/.Net-Common-Utility/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryType>LGPL</RepositoryType>
+        <PackageReleaseNotes>Sop.Common.Serialization
+JSON和xml相关的工具类，后续不断完善</PackageReleaseNotes>
+        <NeutralLanguage>en</NeutralLanguage>
+        <AssemblyVersion>1.2.1.0</AssemblyVersion>
+        <FileVersion>1.2.1.2</FileVersion>
+        <Company>sopcce@hotmail.com;</Company>
+        <Product>Sop.Common.Serialization</Product>
+    </PropertyGroup>
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+    </ItemGroup>
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+    </ItemGroup>
+    <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">        
+    </ItemGroup>
+   
+    <ItemGroup>
+        <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <Reference Include="Microsoft.VisualBasic">
+        <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.VisualBasic.dll</HintPath>
+      </Reference>
+      <Reference Include="System.Data.Entity">
+        <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Data.Entity.dll</HintPath>
+      </Reference>
+      <Reference Include="System.Runtime.Caching">
+        <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Runtime.Caching.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Update="Spider.Properties.cs">
+            <DependentUpon>Spider.cs</DependentUpon>
+        </Compile>
+        <Compile Update="Data\Parser\DataParser`.cs">
+            <DependentUpon>DataParser.cs</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Properties\" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+      <PackageReference Include="System.Security.Permissions">
+        <Version>4.5.0</Version>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
+      <PackageReference Include="System.Security.Permissions">
+        <Version>4.5.0</Version>
+      </PackageReference>
+    </ItemGroup>
+
+</Project>
+ 

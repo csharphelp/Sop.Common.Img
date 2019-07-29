@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Sop.Common.Serialization</id>
+    <version>1.2.1</version>
+    <title>Title</title>
+    <authors>sopcce@hotmail.com</authors>
+    <owners>sopcce@hotmail.com</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/Sopcce/.Net-Common-Utility/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Sopcce/.Net-Common-Utility</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Sopcce/.Net-Common-Utility/master/favicon.png</iconUrl>
+    <description>Sop.Common.Serialization
+JSON和xml相关的工具类，后续不断完善</description>
+    <releaseNotes>Sop.Common.Serialization
+JSON和xml相关的工具类，后续不断完善</releaseNotes>
+    <copyright>Copyright 2019 sopcce.com</copyright>
+    <tags>dotnetcore c# json</tags>
+    <repository type="LGPL" url="https://github.com/Sopcce/.Net-Common-Utility" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="System.Security.Permissions" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Security.Permissions" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\_AAA\csharphelp\Sop.Common.Img\SourceCode\Sop.Common.Img\bin\Debug\net45\Sop.Common.Img.dll" target="lib\net45\Sop.Common.Img.dll" />
+    <file src="E:\_AAA\csharphelp\Sop.Common.Img\SourceCode\Sop.Common.Img\bin\Debug\net461\Sop.Common.Img.dll" target="lib\net461\Sop.Common.Img.dll" />
+    <file src="E:\_AAA\csharphelp\Sop.Common.Img\SourceCode\Sop.Common.Img\bin\Debug\netstandard2.0\Sop.Common.Img.dll" target="lib\netstandard2.0\Sop.Common.Img.dll" />
+  </files>
+</package>
