@@ -38,6 +38,7 @@ JSON和xml相关的工具类，后续不断完善</PackageReleaseNotes>
    
     <ItemGroup>
         <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+        <PackageReference Include="Tesseract" Version="3.3.0" />
     </ItemGroup>
     <ItemGroup>
       <Reference Include="Microsoft.VisualBasic">
