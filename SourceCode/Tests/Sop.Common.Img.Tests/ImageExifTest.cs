@@ -26,7 +26,7 @@ namespace Sop.Common.Img.Tests
         [Test]
         public void GetExifDateTime_Tests()
         { 
-            var result = ImageExif.GetExifDateTime(imagePath);
+            var result = ImgExif.GetExifDateTime(imagePath);
             Assert.AreEqual(result, "");
             
 
@@ -35,7 +35,7 @@ namespace Sop.Common.Img.Tests
         [Test]
         public void GetExifInfo_Tests()
         {
-            var result = ImageExif.GetExifInfo(imagePath);
+            var result = ImgExif.GetExifInfo(imagePath);
 
             var re = result;
 

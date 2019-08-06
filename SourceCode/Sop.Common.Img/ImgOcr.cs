@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 using Tesseract;
 using System.DrawingCore;
-using Bitmap = System.Drawing.Bitmap;
 
 namespace Sop.Common.Img
 {
     /// <summary>
     /// 
     /// </summary>
-    public class ImgesOcr
+    public class ImgOcr
     {
         public string GetText(string dataPath, string filename)
         {
@@ -19,17 +18,19 @@ namespace Sop.Common.Img
                 // have to load Pix via a bitmap since Pix doesn't support loading a stream.
                 using (var image = new Bitmap(filename))
                 {
-                    using (var pix = PixConverter.ToPix(image))
-                    {
-                        using (var page = engine.Process(pix))
-                        {
-                            var text = String.Format("{0:P}", page.GetMeanConfidence());
-                            return page.GetText();
-                        }
-                    }
+                    //using (var pix = PixConverter.ToPix(image))
+                    //{
+                    //    using (var page = engine.Process(pix))
+                    //    {
+                    //        var text = $"{page.GetMeanConfidence():P}";
+                    //        return page.GetText();
+                    //    }
+                    //}
+                    return "";
                 }
 
             }
 
         }
     }
+}

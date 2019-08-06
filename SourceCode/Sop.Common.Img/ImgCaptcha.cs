@@ -3,15 +3,16 @@ using System.DrawingCore;
 using System.DrawingCore.Imaging;
 using System.DrawingCore.Text;
 using System.IO;
+using Sop.Common.Img.Gif;
 
-namespace Sop.Common.Img.Gif
+namespace Sop.Common.Img
 {
     /// <summary>
     /// 验证码操作类。
     /// 1、实现动态生成GIF验证码
     /// 2、可以配置验证字符
     /// </summary>
-    public static class Captcha
+    public static class ImgCaptcha
   {
     /// <summary>
     /// 定义验证码中所有的字符

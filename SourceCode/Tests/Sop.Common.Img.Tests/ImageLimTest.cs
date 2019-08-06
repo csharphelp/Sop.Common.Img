@@ -25,7 +25,7 @@ namespace Sop.Common.Img.Tests
         [Test]
         public void GetThumbnails_Tests()
         { 
-            var isok = ImagesLim.GetThumbnails(imagePath, outputFilePath);
+            var isok = ImgLim.GetThumbnails(imagePath, outputFilePath);
             Assert.IsTrue(isok,"³É¹¦");
         }
     }

@@ -23,8 +23,8 @@
         /// <param name="imageGifPath">输入源图片路径</param>
         /// <param name="outputFilePath">输出路径</param>
         /// <param name="fileNamePrefix">文件前缀</param>
-        /// <param name="imageFormat">文件后缀名称</param>
+        /// <param name="fileNameSuffix">文件前缀</param>
         /// <returns></returns>
-        ReturnValues DecomposeAminmate(string imageGifPath, string outputFilePath, string fileNamePrefix = null, string FileNameSuffix = ".png");
+        ReturnValues DecomposeAminmate(string imageGifPath, string outputFilePath, string fileNamePrefix = null, string fileNameSuffix = ".png");
     }
 }

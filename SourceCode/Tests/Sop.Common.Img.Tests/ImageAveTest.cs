@@ -27,7 +27,7 @@ namespace Sop.Common.Img.Tests
         [Test]
         public void GetColorRGB_Tests()
         { 
-            var result = ImageAve.GetColorRGB(imagePath);
+            var result = ImgAve.GetColorRgb(imagePath);
 
 
 

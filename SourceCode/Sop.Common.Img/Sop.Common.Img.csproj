@@ -5,29 +5,39 @@
         <LangVersion>latest</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-        <Version>1.2.1</Version>
+        <Version>1.2.2</Version>
         <Authors>sopcce@hotmail.com;</Authors>
         <Copyright>Copyright 2019 sopcce.com</Copyright>
-        <PackageId>Sop.Common.Serialization</PackageId>
+        <PackageId>Sop.Common.Img</PackageId>
 		<Title>Title</Title>		
 		<Summary>zh</Summary>
 		 
-        <Description>Sop.Common.Serialization
-JSON和xml相关的工具类，后续不断完善</Description>
+        <Description>图片处理服务为图片文件提供以下功能：
+对图片进行缩略操作
+图片缩放、裁剪、旋转
+获取图片格式、大小、色彩模型信息
+提供数码相机照片的可交换图像文件格式
+图片添加图片、文字、图文混合水印
+计算图片的平均色调</Description>
         <PackageTags>dotnetcore;c#;json</PackageTags>
-        <PackageProjectUrl>https://github.com/Sopcce/.Net-Common-Utility</PackageProjectUrl>
-        <PackageIconUrl>https://raw.githubusercontent.com/Sopcce/.Net-Common-Utility/master/favicon.png</PackageIconUrl>
-        <RepositoryUrl>https://github.com/Sopcce/.Net-Common-Utility</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/csharphelp/Sop.Common.Img</PackageProjectUrl>
+        <PackageIconUrl>https://github.com/csharphelp/Sop.Common.Img/master/favicon.png</PackageIconUrl>
+        <RepositoryUrl>https://github.com/csharphelp/Sop.Common.Img</RepositoryUrl>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <PackageLicenseUrl>https://github.com/Sopcce/.Net-Common-Utility/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageLicenseUrl>https://github.com/csharphelp/Sop.Common.Img</PackageLicenseUrl>
         <RepositoryType>LGPL</RepositoryType>
-        <PackageReleaseNotes>Sop.Common.Serialization
-JSON和xml相关的工具类，后续不断完善</PackageReleaseNotes>
+        <PackageReleaseNotes>图片处理服务为图片文件提供以下功能：
+对图片进行缩略操作
+图片缩放、裁剪、旋转
+获取图片格式、大小、色彩模型信息
+提供数码相机照片的可交换图像文件格式
+图片添加图片、文字、图文混合水印
+计算图片的平均色调</PackageReleaseNotes>
         <NeutralLanguage>en</NeutralLanguage>
-        <AssemblyVersion>1.2.1.0</AssemblyVersion>
-        <FileVersion>1.2.1.2</FileVersion>
+        <AssemblyVersion>1.2.2.1</AssemblyVersion>
+        <FileVersion>1.2.2.1</FileVersion>
         <Company>sopcce@hotmail.com;</Company>
-        <Product>Sop.Common.Serialization</Product>
+        <Product>Sop.Common.Img</Product>
     </PropertyGroup>
     <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
     </ItemGroup>

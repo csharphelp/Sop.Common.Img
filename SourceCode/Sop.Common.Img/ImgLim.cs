@@ -16,18 +16,18 @@ namespace Sop.Common.Img
     /// 瘦身后的图片 http://7xkv1q.com1.z0.glb.clouddn.com/grape.jpg?imageslim
     /// 画质基本不变、格式不变、分辨率不变、图片文件体积大幅减少
     /// </summary>
-    public class ImagesLim
+    public class ImgLim
     {
         #region Instance
 
-        private static volatile ImagesLim _instance = null;
+        private static volatile ImgLim _instance = null;
         private static readonly object Lock = new object();
 
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public static ImagesLim Instance()
+        public static ImgLim Instance()
         {
             if (_instance == null)
             {
@@ -35,7 +35,7 @@ namespace Sop.Common.Img
                 {
                     if (_instance == null)
                     {
-                        _instance = new ImagesLim();
+                        _instance = new ImgLim();
                     }
                 }
             }

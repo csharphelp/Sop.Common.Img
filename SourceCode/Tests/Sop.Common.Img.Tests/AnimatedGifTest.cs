@@ -58,7 +58,7 @@ namespace Sop.Common.Img.Tests
             {
                 File.Delete(outputImagePath);
             }
-            var isok = Animate.Instance().GenerateAminmate(imageFilePaths, outputImagePath);
+            var isok = ImgAnimate.Instance().GenerateAminmate(imageFilePaths, outputImagePath);
             Assert.IsTrue(isok, "生成成功");
 
             var isExists = File.Exists(outputImagePath);
@@ -75,7 +75,7 @@ namespace Sop.Common.Img.Tests
             var isExists = File.Exists(imageGifPath);
             Assert.IsTrue(isExists, "文件存在");
 
-            var list = Animate.Instance().DecomposeAminmate(imageGifPath, outputFilePath);
+            var list = ImgAnimate.Instance().DecomposeAminmate(imageGifPath, outputFilePath);
             Assert.IsTrue(list.Success, "文件成功");
            
         }

@@ -7,7 +7,7 @@ using System.Net;
 
 namespace Sop.Common.Img
 {
-    public class DownImg
+    public class ImgDown
     {
 
 

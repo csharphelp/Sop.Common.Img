@@ -8,7 +8,7 @@ namespace Sop.Common.Img
     /// <summary>
     /// 
     /// </summary>
-    public class Animate : IAnimate
+    public class ImgAnimate : IAnimate
     {
         #region Instance
 
@@ -27,7 +27,7 @@ namespace Sop.Common.Img
                 {
                     if (_instance == null)
                     {
-                        _instance = new Animate();
+                        _instance = new ImgAnimate();
                     }
                 }
             }

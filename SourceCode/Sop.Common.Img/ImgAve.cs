@@ -14,19 +14,17 @@ namespace Sop.Common.Img
     /// 1、请求图片长和宽均不能超过10000像素
     /// 2、请求图片总大小不超过20MB
     /// </summary>
-    public class ImageAve
+    public class ImgAve
     {
         //https://o6nalx2hr.qnssl.com/0.jpg?imageAve
         //"RGB": "0x85694d"
-
-
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="sourceFile"></param>
         /// <returns></returns>
-        public static byte[] GetByteRGB(string sourceFile)
+        public static byte[] GetByteRgb(string sourceFile)
         { 
             using (Bitmap image = new Bitmap(sourceFile))
             {
@@ -48,7 +46,7 @@ namespace Sop.Common.Img
         }
 
 
-        public static Color GetColorRGB(string sourceFile)
+        public static Color GetColorRgb(string sourceFile)
         { 
             using (Bitmap bitmap = new Bitmap(sourceFile))
             { //色调的总和
