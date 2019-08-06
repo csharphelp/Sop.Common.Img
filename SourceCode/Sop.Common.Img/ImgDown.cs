@@ -7,11 +7,11 @@ using System.Net;
 
 namespace Sop.Common.Img
 {
+    /// <summary>
+    /// 图像下载
+    /// </summary>
     public class ImgDown
-    {
-
-
-
+    { 
         /// <summary>
         /// 
         /// </summary>
