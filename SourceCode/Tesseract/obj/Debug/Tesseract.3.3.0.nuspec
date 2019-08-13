@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Tesseract</id>
+    <version>3.3.0</version>
+    <authors>Charles Weld</authors>
+    <owners>Charles Weld</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/charlesw/tesseract/</projectUrl>
+    <description>Tesseract is probably the most accurate open source OCR engine available. Combined with the Leptonica Image Processing Library it can read a wide variety of image formats and convert them to text in over 60 languages. It was one of the top 3 engines in the 1995 UNLV Accuracy test. Between 1995 and 2006 it had little work done on it, but since then it has been improved extensively by Google. It is released under the Apache License 2.0.</description>
+    <releaseNotes>https://github.com/charlesw/tesseract/blob/master/ChangeLog.md</releaseNotes>
+    <copyright>Copyright 2012-2018 Charles Weld</copyright>
+    <tags>Tesseract Ocr</tags>
+    <repository url="https://github.com/charlesw/tesseract/" />
+    <dependencies>
+      <group targetFramework=".NETFramework2.0" />
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Reflection.Emit" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\net20\Tesseract.dll" target="lib\net20\Tesseract.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\net40\Tesseract.dll" target="lib\net40\Tesseract.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\net45\Tesseract.dll" target="lib\net45\Tesseract.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\netstandard2.0\Tesseract.dll" target="lib\netstandard2.0\Tesseract.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\netstandard2.0\Tesseract.xml" target="lib\netstandard2.0\Tesseract.xml" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\x64\liblept1753.dll" target="x64\liblept1753.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\x64\libtesseract3052.dll" target="x64\libtesseract3052.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\x86\liblept1753.dll" target="x86\liblept1753.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\x86\libtesseract3052.dll" target="x86\libtesseract3052.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\Tesseract.targets" target="build\Tesseract.targets" />
+  </files>
+</package>

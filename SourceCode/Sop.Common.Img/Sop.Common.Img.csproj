@@ -47,8 +47,8 @@
     </ItemGroup>
    
     <ItemGroup>
+        <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
         <PackageReference Include="System.ValueTuple" Version="4.5.0" />
-        <PackageReference Include="Tesseract" Version="3.3.0" />
     </ItemGroup>
     <ItemGroup>
       <Reference Include="Microsoft.VisualBasic">
@@ -88,7 +88,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\tesseract\src\Tesseract\Tesseract.csproj" />
+      <ProjectReference Include="..\Tesseract\Tesseract.csproj" />
     </ItemGroup>
 
 </Project>
