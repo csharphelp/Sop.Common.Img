@@ -6,17 +6,9 @@ using Sop.Common.Img.Utility;
 namespace Sop.Common.Img
 {
     /// <summary>
-    /// 图片瘦身服务（imageslim）在尽可能不影响画质的情况下，
-    /// 将JPEG、PNG格式的图片实时压缩，大幅缩小文件体积：
-    /// 加快客户端图片的加载速度，提升用户体验
-    /// 使用须知
-    /// 支持 JPEG、PNG 格式。瘦身后画质不变，分辨率不变，格式不变，文件体积大幅缩小。
-    /// 对图片大小/分辨率没有限制，处理异常（处理超时、处理后图片大小大于原图、处理出错等）则返回原图。
-    /// 原图  http://7xkv1q.com1.z0.glb.clouddn.com/grape.jpg
-    /// 瘦身后的图片 http://7xkv1q.com1.z0.glb.clouddn.com/grape.jpg?imageslim
-    /// 画质基本不变、格式不变、分辨率不变、图片文件体积大幅减少
+    /// 图片瘦身服务 
     /// </summary>
-    public class ImgLim
+    public class ImgLim : IImgLim
     {
         #region Instance
 
@@ -131,8 +123,6 @@ namespace Sop.Common.Img
             }
         }
 
-
-
         /// <summary>
         /// 压缩图片
         /// </summary>
@@ -185,7 +175,7 @@ namespace Sop.Common.Img
 
     }
 
-
-
-
+    public interface IImgLim
+    {
+    }
 }

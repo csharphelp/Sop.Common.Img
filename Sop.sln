@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8B9AA686-51BD-40BD-96C3-F34205F0D8BA}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sop.Common.Img", "SourceCode\Sop.Common.Img\Sop.Common.Img.csproj", "{4FD175E0-EDF0-47E7-8B04-B1B98313F890}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sop.Common.Img.Tests", "SourceCode\Tests\Sop.Common.Img.Tests\Sop.Common.Img.Tests.csproj", "{92D510F0-9806-44E6-8379-70E7A3B7DD1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sop.Common.Img.Tests", "SourceCode\Sop.Common.Img.Tests\Sop.Common.Img.Tests.csproj", "{81B4AB7F-5843-4B5C-911A-AF588176E0A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesseract", "..\tesseract\src\Tesseract\Tesseract.csproj", "{730160BD-9A3A-411F-9E81-C9D404E30BE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesseract.NetCore2Tests", "..\tesseract\src\Tesseract.NetCore2Tests\Tesseract.NetCore2Tests.csproj", "{216C3A9C-D17F-4F4C-B1A8-DCD657F609A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,16 +21,21 @@ Global
 		{4FD175E0-EDF0-47E7-8B04-B1B98313F890}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FD175E0-EDF0-47E7-8B04-B1B98313F890}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FD175E0-EDF0-47E7-8B04-B1B98313F890}.Release|Any CPU.Build.0 = Release|Any CPU
-		{92D510F0-9806-44E6-8379-70E7A3B7DD1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92D510F0-9806-44E6-8379-70E7A3B7DD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92D510F0-9806-44E6-8379-70E7A3B7DD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92D510F0-9806-44E6-8379-70E7A3B7DD1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B4AB7F-5843-4B5C-911A-AF588176E0A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B4AB7F-5843-4B5C-911A-AF588176E0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B4AB7F-5843-4B5C-911A-AF588176E0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B4AB7F-5843-4B5C-911A-AF588176E0A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{730160BD-9A3A-411F-9E81-C9D404E30BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{730160BD-9A3A-411F-9E81-C9D404E30BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{730160BD-9A3A-411F-9E81-C9D404E30BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{730160BD-9A3A-411F-9E81-C9D404E30BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216C3A9C-D17F-4F4C-B1A8-DCD657F609A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216C3A9C-D17F-4F4C-B1A8-DCD657F609A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216C3A9C-D17F-4F4C-B1A8-DCD657F609A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216C3A9C-D17F-4F4C-B1A8-DCD657F609A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{92D510F0-9806-44E6-8379-70E7A3B7DD1A} = {8B9AA686-51BD-40BD-96C3-F34205F0D8BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A6B9FB4-FC38-453E-9798-4857FA1FB8A4}
