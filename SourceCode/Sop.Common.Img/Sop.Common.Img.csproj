@@ -5,7 +5,7 @@
         <LangVersion>latest</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-        <Version>1.2.2</Version>
+        <Version>1.2.3</Version>
         <Authors>sopcce@hotmail.com;</Authors>
         <Copyright>Copyright 2019 sopcce.com</Copyright>
         <PackageId>Sop.Common.Img</PackageId>
@@ -34,8 +34,8 @@
 图片添加图片、文字、图文混合水印
 计算图片的平均色调</PackageReleaseNotes>
         <NeutralLanguage>en</NeutralLanguage>
-        <AssemblyVersion>1.2.2.1</AssemblyVersion>
-        <FileVersion>1.2.2.1</FileVersion>
+        <AssemblyVersion>1.2.2.3</AssemblyVersion>
+        <FileVersion>1.2.2.3</FileVersion>
         <Company>sopcce@hotmail.com;</Company>
         <Product>Sop.Common.Img</Product>
     </PropertyGroup>
