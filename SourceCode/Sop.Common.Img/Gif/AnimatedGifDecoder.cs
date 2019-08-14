@@ -9,25 +9,31 @@ namespace Sop.Common.Img.Gif
     public class AnimatedGifDecoder
     {
 
-        /**
-		 * File read status: No errors.
-		 */
+        /// <summary>
+        /// File read status: No errors.
+        /// </summary>
         public static readonly int STATUS_OK = 0;
 
-        /**
-		 * File read status: Error decoding file (may be partially decoded)
-		 */
+        /// <summary>
+        /// File read status: Error decoding file (may be partially decoded)
+        /// </summary>
         public static readonly int STATUS_FORMAT_ERROR = 1;
 
-        /**
-		 * File read status: Unable to open source.
-		 */
+        /// <summary>
+        /// File read status: Unable to open source.
+        /// </summary>
         public static readonly int STATUS_OPEN_ERROR = 2;
+        #region protected field
 
         protected Stream inStream;
+        /// <summary>
+        /// 
+        /// </summary>
         protected int status;
-
-        protected int width; // full image width
+        /// <summary>
+        /// full image width
+        /// </summary>
+        protected int width; // 
         protected int height; // full image height
         protected bool gctFlag; // global color table used
         protected int gctSize; // size of global color table
@@ -75,6 +81,7 @@ namespace Sop.Common.Img.Gif
         protected ArrayList frames; // frames read from current file
         protected int frameCount;
 
+        #endregion
         public class GifFrame
         {
             public GifFrame(System.DrawingCore.Image im, int del)

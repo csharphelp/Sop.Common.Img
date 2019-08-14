@@ -41,6 +41,10 @@ namespace Sop.Common.Img
         /// <returns></returns>
         public static string GetStringFromImage(string imagePath, string lang = "eng", EngineMode mode = EngineMode.Default)
         {
+            if (!Directory.Exists(DataPath))
+            {
+                throw new Exception(" Directory NOT exist DataPath");
+            }
             var textValue = string.Empty;
             if (!string.IsNullOrWhiteSpace(imagePath) && System.IO.File.Exists(imagePath))
             {
@@ -50,78 +54,49 @@ namespace Sop.Common.Img
                     {
                         using (var img = Pix.LoadFromFile(imagePath))
                         {
+                            //FBDH67 \FﬂbHaT
+
                             var fileName = Path.GetFileName(imagePath).ToLowerInvariant();
-                            using (var page = engine.Process(img, fileName, new Rect(0, 0, img.Width, img.Height), PageSegMode.RawLine))
-                            {
+                            //using (var page = engine.Process(img, fileName, new Rect(0, 0, img.Width, img.Height), PageSegMode.CircleWord))
+                            //{
 
-                                textValue = page.GetText();
-                                var s = String.Format("{0:P}", page.GetMeanConfidence());
-                                var d = page.GetIterator();
-                                var f = page.GetThresholdedImage();
-                                var aSymbol = page.GetSegmentedRegions(PageIteratorLevel.Symbol);
-                                var aBlock = page.GetSegmentedRegions(PageIteratorLevel.Block);
-                                var aPara = page.GetSegmentedRegions(PageIteratorLevel.Para);
-                                var aTextLine = page.GetSegmentedRegions(PageIteratorLevel.TextLine);
-                                var aWord = page.GetSegmentedRegions(PageIteratorLevel.Word);
+                            //    textValue = page.GetText();
+                            //    var s = String.Format("{0:P}", page.GetMeanConfidence());
+                            //    var d = page.GetIterator();
+                            //    var f = page.GetThresholdedImage();
+                            //    var aSymbol = page.GetSegmentedRegions(PageIteratorLevel.Symbol);
+                            //    var aBlock = page.GetSegmentedRegions(PageIteratorLevel.Block);
+                            //    var aPara = page.GetSegmentedRegions(PageIteratorLevel.Para);
+                            //    var aTextLine = page.GetSegmentedRegions(PageIteratorLevel.TextLine);
+                            //    var aWord = page.GetSegmentedRegions(PageIteratorLevel.Word);
 
-                                List<Rectangle> boxes = page.GetSegmentedRegions(PageIteratorLevel.TextLine);
-
-                                for (int i = 0; i < boxes.Count; i++)
-                                {
-                                    Rectangle box = boxes[i];
-                                    string asdasda = String.Format("Box[{0}]: x={1}, y={2}, w={3}, h={4}", i, box.X, box.Y, box.Width, box.Height);
-                                }
-
-                              
-
-                                string varult = "";
-                                using (var iter = page.GetIterator())
-                                {
-                                    iter.Begin();
-
-                                    do
-                                    {
-                                        do
-                                        {
-                                            do
-                                            {
-                                                do
-                                                {
-                                                    if (iter.IsAtBeginningOf(PageIteratorLevel.Block))
-                                                    {
-                                                        varult = varult + "<BLOCK>";
-                                                    }
-                                                    varult = iter.GetText(PageIteratorLevel.Word);
-                                                    varult = varult + " ";
-
-                                                    if (iter.IsAtFinalOf(PageIteratorLevel.TextLine, PageIteratorLevel.Word))
-                                                    {
-                                                        varult = varult + " |";
-                                                    }
-                                                } while (iter.Next(PageIteratorLevel.TextLine, PageIteratorLevel.Word));
-
-                                                if (iter.IsAtFinalOf(PageIteratorLevel.Para, PageIteratorLevel.TextLine))
-                                                {
-                                                    varult = varult + " |";
-                                                }
-                                            } while (iter.Next(PageIteratorLevel.Para, PageIteratorLevel.TextLine));
-                                        } while (iter.Next(PageIteratorLevel.Block, PageIteratorLevel.Para));
-                                    } while (iter.Next(PageIteratorLevel.Block));
-
-                                }
-
-
-                                string asdasd = varult;
+                            //}
+                            using (var page = engine.Process(img, fileName, new Rect(0, 0, img.Width, img.Height), PageSegMode.CircleWord))
+                            { 
+                                textValue = page.GetText(); 
                             }
-                        }
-
-                        using (var pix = Pix.LoadFromFile(imagePath))
-                        {
-                            using (var page = engine.Process(pix, PageSegMode.SingleWord))
+                            using (var page = engine.Process(img, fileName, new Rect(0, 0, img.Width, img.Height), PageSegMode.SparseTextOsd))
                             {
                                 textValue = page.GetText();
                             }
+                            using (var page = engine.Process(img, fileName, new Rect(0, 0, img.Width, img.Height), PageSegMode.Count))
+                            {
+                                textValue = page.GetText();
+                            }
+                            using (var page = engine.Process(img, fileName, new Rect(0, 0, img.Width, img.Height), PageSegMode.SingleColumn))
+                            {
+                                textValue = page.GetText();
+                            }
+                            using (var page = engine.Process(img, fileName, new Rect(0, 0, img.Width, img.Height), PageSegMode.SparseText))
+                            {
+                                textValue = page.GetText();
+                            }
+
+
+
                         }
+
+                      
 
                     }
 

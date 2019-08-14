@@ -65,5 +65,29 @@ namespace Sop.Common.Img
                 return null;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="bitmap"></param>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="color"></param>
+        /// <returns></returns>
+        public static Bitmap SetReplacesFloodFill(Bitmap bitmap, int x, int y, Color color)
+        {
+            var img = new FastBitmap(bitmap);
+            img.LockImage();
+            int width = 0; //
+            int height = 0;//
+            var rect = img.FloodFill(0, 0, color, width, height);
+            img.ReplaceColor(Color.FromArgb(158, 148, 159), Color.White);
+
+            img.Clone();
+            img.UnlockImage();
+            return img.Image;
+
+        }
+
+
     }
 }

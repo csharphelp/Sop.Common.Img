@@ -20,7 +20,6 @@ E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\netstandard2.0\T
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\netstandard2.0\Tesseract.dll
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\netstandard2.0\Tesseract.pdb
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\netstandard2.0\Tesseract.xml
-E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\netstandard2.0\Tesseract.csprojAssemblyReference.cache
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\netstandard2.0\Tesseract.csproj.CoreCompileInputs.cache
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\netstandard2.0\Tesseract.AssemblyInfoInputs.cache
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\netstandard2.0\Tesseract.AssemblyInfo.cs

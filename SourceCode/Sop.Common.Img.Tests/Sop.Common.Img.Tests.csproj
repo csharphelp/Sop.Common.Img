@@ -16,9 +16,7 @@
     <None Remove="Resources\ocr\PSM_SingleColumn.png" />
     <None Remove="Resources\ocr\PSM_SingleLine.png" />
     <None Remove="Resources\ocr\PSM_SingleWord.png" />
-    <None Remove="Resources\ocr\seccode %281%29.jpg" />
     <None Remove="Resources\ocr\seccode %282%29.jpg" />
-    <None Remove="Resources\ocr\seccode.png" />
     <None Remove="Resources\read.md" />
   </ItemGroup>
 
@@ -44,11 +42,7 @@
     <EmbeddedResource Include="Resources\ocr\PSM_SingleWord.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ocr\seccode (1).jpg" />
     <EmbeddedResource Include="Resources\ocr\seccode (2).jpg" />
-    <EmbeddedResource Include="Resources\ocr\seccode.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -79,6 +73,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Resources\grape.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\ocr\seccode.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Resources\ocr\tessdata\Configs\bazzar">
@@ -173,9 +170,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\ocr\seccode %281%29.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
     <EmbeddedResource Update="Resources\ocr\seccode %282%29.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
