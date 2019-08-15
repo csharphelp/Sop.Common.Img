@@ -10,6 +10,11 @@
 
   <ItemGroup>
     <None Remove="Resources\03.png" />
+    <None Remove="Resources\it.png" />
+    <None Remove="Resources\LOGO_24x24.png" />
+    <None Remove="Resources\LOGO_32x32.png" />
+    <None Remove="Resources\LOGO_48x48.png" />
+    <None Remove="Resources\LOGO_64x64.png" />
     <None Remove="Resources\ocr\PSM_SingleBlock.png" />
     <None Remove="Resources\ocr\PSM_SingleBlockVertText.png" />
     <None Remove="Resources\ocr\PSM_SingleChar.png" />
@@ -22,6 +27,18 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\gif\03.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LOGO_24x24.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LOGO_32x32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LOGO_48x48.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LOGO_64x64.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ocr\PSM_SingleBlock.png">

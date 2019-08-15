@@ -16,9 +16,9 @@ E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\net20\x86\liblep
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\net20\x86\libtesseract3052.dll
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\net20\Tesseract.dll
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\bin\Debug\net20\Tesseract.pdb
+E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\net20\Tesseract.csprojAssemblyReference.cache
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\net20\Tesseract.csproj.CoreCompileInputs.cache
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\net20\Tesseract.AssemblyInfoInputs.cache
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\net20\Tesseract.AssemblyInfo.cs
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\net20\Tesseract.dll
 E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\net20\Tesseract.pdb
-E:\Git\csharphelp\Sop.Common.Img\SourceCode\Tesseract\obj\Debug\net20\Tesseract.csprojAssemblyReference.cache

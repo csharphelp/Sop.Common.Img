@@ -311,7 +311,11 @@ namespace System.DrawingCore
             bmp.Dispose();
             imageAttr.Dispose();
         }
-
+        /// <summary>
+        ///…Ë÷√∑÷±Ê¬ 
+        /// </summary>
+        /// <param name="xDpi"></param>
+        /// <param name="yDpi"></param>
         public void SetResolution(float xDpi, float yDpi)
         {
             Status status = GDIPlus.GdipBitmapSetResolution(nativeObject, xDpi, yDpi);

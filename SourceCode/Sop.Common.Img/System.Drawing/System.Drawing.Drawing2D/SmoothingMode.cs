@@ -29,13 +29,34 @@
 //
 
 namespace System.DrawingCore.Drawing2D {
-
+    /// <summary>
+    /// 指定是否将平滑处理（消除锯齿）应用于直线、曲线和已填充区域的边缘。
+    /// </summary>
 	public enum SmoothingMode {
+        /// <summary>
+        /// AntiAlias      指定消除锯齿的呈现。  
+        /// </summary>
 		AntiAlias = 4,
+        /// <summary>
+        /// Default        指定不消除锯齿。  
+        /// </summary>
 		Default = 0,
+        /// <summary>
+        /// HighQuality  指定高质量、低速度呈现。  
+        /// </summary>
 		HighQuality = 2,
+        /// <summary>
+        /// HighSpeed   指定高速度、低质量呈现。  
+        /// </summary>
 		HighSpeed = 1,
+        /// <summary>
+        /// Invalid        指定一个无效模式。
+        /// </summary>
 		Invalid = -1,
+        /// <summary>
+        ///  None          指定不消除锯齿。 
+        /// </summary>
 		None = 3
-	}
+ 
+    }
 }
