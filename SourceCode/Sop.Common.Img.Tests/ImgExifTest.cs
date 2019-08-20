@@ -4,7 +4,7 @@ using System;
 
 namespace Sop.Common.Img.Tests
 {
-    public class ImageExifTest
+    public class ImgExifTest
     {
         private string[] imageFilePaths;
         private string outputFilePath;

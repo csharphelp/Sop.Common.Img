@@ -8,7 +8,7 @@ namespace Sop.Common.Img
     /// <summary>
     /// 图片瘦身服务 
     /// </summary>
-    public class ImgLim : IImgLim
+    public class ImgLim 
     {
         #region Instance
 
@@ -175,7 +175,5 @@ namespace Sop.Common.Img
 
     }
 
-    public interface IImgLim
-    {
-    }
+  
 }

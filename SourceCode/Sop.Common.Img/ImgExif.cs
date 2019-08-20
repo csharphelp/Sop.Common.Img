@@ -8,7 +8,7 @@ using Sop.Common.Img.Exif;
 namespace Sop.Common.Img
 {
     /// <summary>
-    /// EXIF(EXchangeable Image File Format)是专门为数码相机的照片设定的可交换图像文件格式，通过在图片下载URL后附加exif指示符（区分大小写）获取。  
+    /// EXIF
     /// </summary>
     public class ImgExif
     {
@@ -550,12 +550,6 @@ namespace Sop.Common.Img
             image.Dispose();
             return info;
         }
-
-
-
-
-
-
 
     }
 

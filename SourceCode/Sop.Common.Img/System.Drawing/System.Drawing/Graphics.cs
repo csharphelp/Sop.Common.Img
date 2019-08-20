@@ -2199,7 +2199,9 @@ namespace System.DrawingCore
 			}
 
 		}
-
+        /// <summary>
+        /// 设置高质量插值法
+        /// </summary>
 		public CompositingQuality CompositingQuality {
 			get {
                                 CompositingQuality quality;
