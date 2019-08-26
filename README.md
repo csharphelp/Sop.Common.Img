@@ -1,22 +1,19 @@
-# Sop.Common.Img
-
-# 背景
+## 介绍  Sop.Common.Img
+ > **请看 [七牛云的图片处理功能介绍文档了解本项目功能](https://developer.qiniu.com/dora/manual/3683/img-directions-for-use) **
 
 此项目是有https://github.com/Sopcce/.Net-Common-Utility中的一个小部分模块功能。此处拿出来单独维护
->**以C# Net(dotnet.core)仿照七牛云图片处理类实现的C#帮助类**
+ > **以C# Net(dotnet.core)仿照七牛云图片处理类实现的C#帮助类**
 
-# 远景
-> ### 做最全、最广、最细的图片处理基类
+## 远景
+>   **做最全、最广、最细的图片处理基类 **
 
-# 需要
+## 需要
 - 没钱，用不起七牛云的图片处理，需要自己搭建服务器，自己存储图片。
 - 没有图片识别，还是没钱，图片识别腾讯云做的最好，无奈 还是没钱需要使用Tesseract自己搭建一个图文识别功能。
-- 
-# 图片处理使用说明
-## 介绍
-> ### 请看 [七牛云的图片处理功能介绍文档了解本项目功能](https://developer.qiniu.com/dora/manual/3683/img-directions-for-use)
+> **介绍项目地址：https://github.com/csharphelp/Sop.Common.Img**
+
 ----
-## 功能介绍：
+## 图片处理功能介绍：
 
 ----
 
@@ -48,24 +45,25 @@
 
  
 
-# Nuget
+## Nuget
 
 > Install-Package Sop.Common.Img -Version 1.2.3
 
 
 ## 请尽可能的使用最新版本,或者根据源码自己修改编译使用
 
-# OCR身份证识别
+### OCR身份证识别
  
- 计划使用Tesseract 完成ocr 图片识别部分，只考虑图片，
+ 计划使用Tesseract 完成ocr 图片识别部分，只考虑图片识别验证码一类，
+因验证码识别问题比较麻烦，且存在刚绕线等因素，设计开发比较慢
 
-# 问题反馈
+### 问题反馈
 目前，请反馈在 issues
 QQ群：721420150
 
-### System.Drawing存在bug 目前无能力修改，望周知
+ ** System.Drawing 存在bug 目前无能力修改，望周知 **
 
-# 更新日志
+### 更新日志
 
 
 + 2019.08
@@ -82,5 +80,5 @@ QQ群：721420150
 -  更新提交此项目
 
 
-# License
+## License
 [**GNU General Public License v3.0**](https://github.com/csharphelp/Sop.Common.Img/blob/master/LICENSE)
