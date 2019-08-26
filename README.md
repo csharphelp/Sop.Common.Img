@@ -1,11 +1,11 @@
 ## 介绍  Sop.Common.Img
- > **请看 [七牛云的图片处理功能介绍文档了解本项目功能](https://developer.qiniu.com/dora/manual/3683/img-directions-for-use) **
+ > **请看 [七牛云的图片处理功能介绍文档了解本项目功能](https://developer.qiniu.com/dora/manual/3683/img-directions-for-use)**
 
 此项目是有https://github.com/Sopcce/.Net-Common-Utility中的一个小部分模块功能。此处拿出来单独维护
  > **以C# Net(dotnet.core)仿照七牛云图片处理类实现的C#帮助类**
 
 ## 远景
->   **做最全、最广、最细的图片处理基类 **
+>   **做最全、最广、最细的图片处理基类**
 
 ## 需要
 - 没钱，用不起七牛云的图片处理，需要自己搭建服务器，自己存储图片。
