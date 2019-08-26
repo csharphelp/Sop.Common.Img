@@ -108,11 +108,11 @@ namespace Sop.Common.Img.Gif
             }
             return delay;
         }
-
-        /**
-		 * Gets the number of frames read from file.
-		 * @return frame count
-		 */
+         
+        /// <summary>
+        /// Gets the number of frames read from file.
+        /// </summary>
+        /// <returns>frame count</returns>
         public int GetFrameCount()
         {
             return frameCount;
@@ -128,12 +128,10 @@ namespace Sop.Common.Img.Gif
             return GetFrame(0);
         }
 
-        /**
-		 * Gets the "Netscape" iteration count, if any.
-		 * A count of 0 means repeat indefinitiely.
-		 *
-		 * @return iteration count if one was specified, else 1.
-		 */
+        /// <summary>
+        /// Gets the "Netscape" iteration count, if any.A count of 0 means repeat indefinitiely.
+        /// </summary>
+        /// <returns>iteration count if one was specified, else 1.</returns>
         public int GetLoopCount()
         {
             return loopCount;
@@ -175,7 +173,9 @@ namespace Sop.Common.Img.Gif
                 }
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         protected void SetPixels()
         {
             // expose destination image's pixels as int array
@@ -287,11 +287,11 @@ namespace Sop.Common.Img.Gif
             SetPixels(dest);
         }
 
-        /**
-		 * Gets the image contents of frame n.
-		 *
-		 * @return BufferedImage representation of frame, or null if n is invalid.
-		 */
+        /// <summary>
+        ///   Gets the image contents of frame n.
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns>@return BufferedImage representation of frame, or null if n is invalid.</returns>
         public System.DrawingCore.Image GetFrame(int n)
         {
             System.DrawingCore.Image im = null;
@@ -310,7 +310,7 @@ namespace Sop.Common.Img.Gif
         {
             return new Size(width, height);
         }
- 
+
         /// <summary>
         ///  Reads GIF image from stream
         /// </summary>
@@ -340,13 +340,11 @@ namespace Sop.Common.Img.Gif
             return status;
         }
 
-        /**
-		 * Reads GIF file from specified file/URL source  
-		 * (URL assumed if name contains ":/" or "file:")
-		 *
-		 * @param name String containing source
-		 * @return read status code (0 = no errors)
-		 */
+        /// <summary>
+        /// Reads GIF file from specified file/URL source   (URL assumed if name contains ":/" or "file:")
+        /// </summary>
+        /// <param name="name">name String containing source</param>
+        /// <returns>read status code (0 = no errors)</returns>
         public int Read(String name)
         {
             status = STATUS_OK;
@@ -363,10 +361,10 @@ namespace Sop.Common.Img.Gif
             return status;
         }
 
-        /**
-		 * Decodes LZW image data into pixel array.
-		 * Adapted from John Cristy's ImageMagick.
-		 */
+        /// <summary>
+        /// Decodes LZW image data into pixel array 
+        /// 将LZW图像数据解码为像素数组。 
+        /// </summary>
         protected void DecodeImageData()
         {
             int NullCode = -1;
@@ -631,11 +629,11 @@ namespace Sop.Common.Img.Gif
                 switch (code)
                 {
 
-                    case 0x2C: // image separator
+                    case 0x2C: // image separator 44
                         ReadImage();
                         break;
 
-                    case 0x21: // extension
+                    case 0x21: // extension 33
                         code = Read();
                         switch (code)
                         {

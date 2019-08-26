@@ -29,7 +29,7 @@ namespace Sop.Common.Img.Tests
             };
             //注意，这里使用简单的04.gif,这只含有3帧、
             //使用05.gif   含有140帧哦
-            imageGifPath = $"{filePath}\\04.gif";
+            imageGifPath = $"{filePath}\\05.gif";
 
 
             //输出目录不应该存在，每次都是新的输出目录

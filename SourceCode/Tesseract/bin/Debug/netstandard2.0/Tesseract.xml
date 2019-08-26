@@ -622,7 +622,7 @@
             <param name="orientation">The detected clockwise page rotation in degrees (0, 90, 180, or 270).</param>
             <param name="confidence">The confidence level of the orientation (15 is reasonably confident).</param>
         </member>
-        <!-- 对于成员“M:Tesseract.Page.DetectBestOrientationAndScript(System.Int32@,System.Single@,System.String@,System.Single@)”忽略有格式错误的 XML 注释 -->
+        <!-- Badly formed XML comment ignored for member "M:Tesseract.Page.DetectBestOrientationAndScript(System.Int32@,System.Single@,System.String@,System.Single@)" -->
         <member name="T:Tesseract.PageIterator">
             <summary>
             Represents an object that can iterate over tesseract's page structure.

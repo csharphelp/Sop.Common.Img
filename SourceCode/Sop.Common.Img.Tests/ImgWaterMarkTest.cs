@@ -74,9 +74,10 @@ namespace Sop.Common.Img.Tests
         {
             string logo = Path.Combine(filePath, "LOGO_32x32.png");
             var sourceImage = Image.FromFile(imageGifPath);
-            ////System.Drawing
-            //sourceImage.Save(Path.Combine(filePath, "123.gif"),ImageFormat.Gif);
-             
+
+            sourceImage = Image.FromFile($"{filePath}\\gif\\05.gif"); 
+
+
             var bitmap = ImgWaterMark.Instance().SetWaterMark(sourceImage, Image.FromFile(logo));
             bitmap.Save(Path.Combine(datapath, "gif_water_" + Guid.NewGuid().ToString("N") + ".gif"));
   

@@ -4,7 +4,8 @@ using System.IO;
 namespace Sop.Common.Img.Gif
 {
     /// <summary>
-    /// 
+    /// todo:
+    /// LzwEncoder netcore 解压存在问题，后期处理
     /// </summary>
     public class LzwEncoder
     {
@@ -19,9 +20,7 @@ namespace Sop.Common.Img.Gif
 
         // GIFCOMPR.C       - GIF Image compression routines
         //
-        // Lempel-Ziv compression based on 'compress'.  GIF modifications by
-        // David Rowley (mgardi@watdcsu.waterloo.edu)
-
+       
         // General DEFINEs
 
         static readonly int BITS = 12;
@@ -32,12 +31,7 @@ namespace Sop.Common.Img.Gif
         //
         // Based on: compress.c - File compression ala IEEE Computer, June 1984.
         //
-        // By Authors:  Spencer W. Thomas      (decvax!harpo!utah-cs!utah-gr!thomas)
-        //              Jim McKie              (decvax!mcvax!jim)
-        //              Steve Davies           (decvax!vax135!petsd!peora!srd)
-        //              Ken Turkowski          (decvax!decwrl!turtlevax!ken)
-        //              James A. Woods         (decvax!ihnp4!ames!jaw)
-        //              Joe Orost              (decvax!vax135!petsd!joe)
+    
 
         int n_bits; // number of bits/code
         int maxbits = BITS; // user settable max # bits/code

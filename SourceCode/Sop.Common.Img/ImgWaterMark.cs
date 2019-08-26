@@ -4,6 +4,7 @@ using System.DrawingCore;
 using System.DrawingCore.Drawing2D;
 using System.DrawingCore.Imaging;
 using System.IO;
+using System.Threading.Tasks;
 using Sop.Common.Img.Gif;
 using Sop.Common.Img.Utility;
 namespace Sop.Common.Img
@@ -86,59 +87,77 @@ namespace Sop.Common.Img
             }
             if (sourceImage.RawFormat.Guid == ImageFormat.Gif.Guid)
             {
-                //拆分gif
-                //临时
-                string tempGif = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, Guid.NewGuid().ToString("N") + ".gif");
+                string localPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "temp", Guid.NewGuid().ToString("N"));
+                if (!Directory.Exists(localPath))
+                    Directory.CreateDirectory(localPath);
+                //拆分gif 
+                string tempGif = Path.Combine(localPath, Guid.NewGuid().ToString("N") + ".gif");
                 sourceImage.Save(tempGif, ImageFormat.Gif);
-                List<string> list = new List<string>();
+                List<Info> list = new List<Info>();
+
                 //历史保存
                 AnimatedGifDecoder de = new AnimatedGifDecoder();
                 de.Read(tempGif);
+                var tempRepeat = de.GetLoopCount();
                 for (int i = 0, count = de.GetFrameCount(); i < count; i++)
                 {
                     Image frame = de.GetFrame(i);
-                    string tempPng = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, Guid.NewGuid().ToString("N") + ".png");
+
+                    string tempPng = Path.Combine(localPath, "sc_" + Guid.NewGuid().ToString("N") + ".png");
                     frame.Save(tempPng);
+                    //图片添加水印
+                    var img = SetWaterMarkByImg(frame, waterImage, dissolve, imagePosition, distanceX, distanceY, watermarkScale, watermarkScaleType);
 
+                    string tempWaterPng = Path.Combine(localPath, "waterImage_" + Guid.NewGuid().ToString("N") + ".png");
 
-                    var img = SetWaterMarkByImg(Image.FromFile(tempPng), waterImage, dissolve, imagePosition, distanceX, distanceY, watermarkScale, watermarkScaleType);
-
-                    string tempWaterPng = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, Guid.NewGuid().ToString("N") + "_waterImage.png");
-                     
                     img.Save(tempWaterPng);
-                    list.Add(tempWaterPng);
+                    list.Add(new Info
+                    {
+                        imgDelay = de.GetDelay(i),
+                        imgPath = tempWaterPng,
+                    });
 
                 }
                 //拼接GIF
                 AnimatedGifEncoder e1 = new AnimatedGifEncoder();
                 e1.Start(tempGif);
-                //e1.Delay = 500;    // 延迟间隔
-                e1.SetDelay(500);
-                e1.SetRepeat(0);  //-1:不循环,0:总是循环 播放  
-                foreach (var imgFilePath in list)
+
+
+                e1.SetRepeat(tempRepeat);  //-1:不循环,0:总是循环 播放  
+                foreach (var info in list)
                 {
-                    e1.AddFrame(Image.FromFile(imgFilePath));
+                    e1.SetDelay(info.imgDelay);
+                    e1.AddFrame(Image.FromFile(info.imgPath));
                 }
                 e1.Finish();
+                Image temp = Image.FromFile(tempGif);
 
-
-                //清除历史文件
-                try
-                {
-                    //File.Delete(tempGif);
-                }
-                catch
-                {
-                    GC.WaitForFullGCComplete();
-                }
-
-                return Image.FromFile(tempGif);
+                return temp;
 
             }
             return SetWaterMarkByImg(sourceImage, waterImage, dissolve, imagePosition, distanceX, distanceY, watermarkScale, watermarkScaleType);
 
 
         }
+
+        public class Info
+        {
+            public string imgPath { get; set; }
+            public int imgDelay { get; set; } = 500;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sourceImage"></param>
+        /// <param name="waterImage"></param>
+        /// <param name="dissolve"></param>
+        /// <param name="imagePosition"></param>
+        /// <param name="distanceX"></param>
+        /// <param name="distanceY"></param>
+        /// <param name="watermarkScale"></param>
+        /// <param name="watermarkScaleType"></param>
+        /// <returns></returns>
         private Image SetWaterMarkByImg(Image sourceImage, Image waterImage, float dissolve = 100, ImagePosition imagePosition = ImagePosition.RigthBottom, int distanceX = 10, int distanceY = 10, int watermarkScale = 0, int watermarkScaleType = 0)
         {
             Image imgPhoto = sourceImage;
