@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using Sop.Common.Img;
+using Sop.Common.Img.Servers;
 using System;
 
 namespace Sop.Common.Img.Tests

@@ -6257,11 +6257,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Git\\csharphelp\\Sop.Common.Img\\SourceCode\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj",
+      "projectUniqueName": "E:\\Git\\csharphelp\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj",
       "projectName": "Sop.Common.Img.Tests",
-      "projectPath": "E:\\Git\\csharphelp\\Sop.Common.Img\\SourceCode\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj",
+      "projectPath": "E:\\Git\\csharphelp\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj",
       "packagesPath": "C:\\Users\\sopcc\\.nuget\\packages\\",
-      "outputPath": "E:\\Git\\csharphelp\\Sop.Common.Img\\SourceCode\\Sop.Common.Img.Tests\\obj\\",
+      "outputPath": "E:\\Git\\csharphelp\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6275,13 +6275,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget.djd.cx:8301/repository/nuget-hosted": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\Git\\csharphelp\\Sop.Common.Img\\SourceCode\\Sop.Common.Img\\Sop.Common.Img.csproj": {
-              "projectPath": "E:\\Git\\csharphelp\\Sop.Common.Img\\SourceCode\\Sop.Common.Img\\Sop.Common.Img.csproj"
+            "E:\\Git\\csharphelp\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj": {
+              "projectPath": "E:\\Git\\csharphelp\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj"
             }
           }
         }

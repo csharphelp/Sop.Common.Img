@@ -35,6 +35,7 @@
       </group>
       <group targetFramework=".NETFramework4.6.1">
         <dependency id="Tesseract" version="3.3.0" exclude="Build,Analyzers" />
+        <dependency id="ImageProcessor" version="2.7.0.100" exclude="Build,Analyzers" />
         <dependency id="System.Drawing.Common" version="4.5.1" exclude="Build,Analyzers" />
         <dependency id="System.Reflection.Emit" version="4.3.0" exclude="Build,Analyzers" />
         <dependency id="System.Security.Permissions" version="4.5.0" exclude="Build,Analyzers" />
@@ -50,8 +51,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Sop.Common.Img\bin\Debug\net45\Sop.Common.Img.dll" target="lib\net45\Sop.Common.Img.dll" />
-    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Sop.Common.Img\bin\Debug\net461\Sop.Common.Img.dll" target="lib\net461\Sop.Common.Img.dll" />
-    <file src="E:\Git\csharphelp\Sop.Common.Img\SourceCode\Sop.Common.Img\bin\Debug\netstandard2.0\Sop.Common.Img.dll" target="lib\netstandard2.0\Sop.Common.Img.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\src\Sop.Common.Img\bin\Debug\net45\Sop.Common.Img.dll" target="lib\net45\Sop.Common.Img.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\src\Sop.Common.Img\bin\Debug\net461\Sop.Common.Img.dll" target="lib\net461\Sop.Common.Img.dll" />
+    <file src="E:\Git\csharphelp\Sop.Common.Img\src\Sop.Common.Img\bin\Debug\netstandard2.0\Sop.Common.Img.dll" target="lib\netstandard2.0\Sop.Common.Img.dll" />
   </files>
 </package>

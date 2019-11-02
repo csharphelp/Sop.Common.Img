@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using Sop.Common.Img;
 using System;
+using Sop.Common.Img.Servers;
 
 namespace Sop.Common.Img.Tests
 {
@@ -27,7 +28,7 @@ namespace Sop.Common.Img.Tests
         [Test]
         public void GetColorRGB_Tests()
         { 
-            var result = ImgAve.GetColorRgb(imagePath);
+            var result = ImgAve.Instance().GetColorRgb(imagePath);
 
 
 

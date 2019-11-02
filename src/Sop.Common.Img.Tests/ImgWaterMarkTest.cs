@@ -4,6 +4,7 @@ using System.DrawingCore;
 using System.DrawingCore.Imaging;
 using System.IO;
 using System.Runtime.InteropServices;
+using Sop.Common.Img.Servers;
 
 namespace Sop.Common.Img.Tests
 {

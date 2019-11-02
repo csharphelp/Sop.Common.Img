@@ -1,9 +1,8 @@
 ﻿using NUnit.Framework;
+using Sop.Common.Img.Servers;
 using System;
 using System.DrawingCore;
-using System.DrawingCore.Imaging;
 using System.IO;
-using System.Runtime.InteropServices;
 
 namespace Sop.Common.Img.Tests
 {

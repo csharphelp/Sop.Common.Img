@@ -834,11 +834,11 @@
   "project": {
     "version": "3.3.0",
     "restore": {
-      "projectUniqueName": "E:\\Git\\csharphelp\\Sop.Common.Img\\SourceCode\\Tesseract\\Tesseract.csproj",
+      "projectUniqueName": "E:\\Git\\csharphelp\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj",
       "projectName": "Tesseract",
-      "projectPath": "E:\\Git\\csharphelp\\Sop.Common.Img\\SourceCode\\Tesseract\\Tesseract.csproj",
+      "projectPath": "E:\\Git\\csharphelp\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj",
       "packagesPath": "C:\\Users\\sopcc\\.nuget\\packages\\",
-      "outputPath": "E:\\Git\\csharphelp\\Sop.Common.Img\\SourceCode\\Tesseract\\obj\\",
+      "outputPath": "E:\\Git\\csharphelp\\Sop.Common.Img\\src\\Tesseract\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -856,6 +856,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget.djd.cx:8301/repository/nuget-hosted": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

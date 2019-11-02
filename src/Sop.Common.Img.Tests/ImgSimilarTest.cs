@@ -3,6 +3,7 @@ using NUnit.Framework.Internal;
 using System;
 using System.Collections.Generic;
 using Serilog;
+using Sop.Common.Img.Servers;
 
 namespace Sop.Common.Img.Tests
 {

@@ -15,7 +15,7 @@ namespace Sop.Common.Img.Utility
         /// <summary>  
         /// 获取图片编码信息  
         /// </summary>  
-       
+
 
         /// <summary>
         /// 获取MimeType类型
@@ -26,7 +26,7 @@ namespace Sop.Common.Img.Utility
         {
             string result = null;
             if (extension == null)
-                return result;
+                return null;
             if (!extension.StartsWith("."))
                 extension = "." + extension;
             if (!MimeTypeMap._mappings.Value.TryGetValue(extension, out result))
@@ -41,16 +41,18 @@ namespace Sop.Common.Img.Utility
         /// <returns></returns>
         public static string GetMimeType(string fileName, string defaultMimeType = "application/octet-stream")
         {
-            string result = null;
-            string extension = System.IO.Path.GetExtension(fileName).ToLower();
-            if (extension == null)
-                return result;
-            if (!extension.StartsWith("."))
+            string extension = System.IO.Path.GetExtension(fileName)?.ToLower();
+            if (extension != null && !extension.StartsWith("."))
+            {
                 extension = "." + extension;
-            if (!MimeTypeMap._mappings.Value.TryGetValue(extension, out result))
-                return defaultMimeType;
-            return result;
-
+                if (!MimeTypeMap._mappings.Value.TryGetValue(extension, out var result))
+                    return defaultMimeType;
+                return result;
+            }
+            else
+            {
+                return null;
+            } 
         }
         /// <summary>
         /// 获取扩展名
@@ -59,14 +61,13 @@ namespace Sop.Common.Img.Utility
         /// <returns></returns>
         public static string GetExtension(string mimeType)
         {
-            string result = null;
             if (mimeType == null)
-                return result;
+                return null;
             if (mimeType.StartsWith("."))
+                return null;
+            if (MimeTypeMap._mappings.Value.TryGetValue(mimeType, out var result))
                 return result;
-            if (MimeTypeMap._mappings.Value.TryGetValue(mimeType, out result))
-                return result;
-            return result;
+            return null;
         }
 
 
