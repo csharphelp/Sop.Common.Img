@@ -62,18 +62,29 @@
 QQ群：721420150
 
  ** System.Drawing 存在bug 目前无能力修改，望周知 **
+ 原项目：System.Drawing 已经替换
+ 
+
 
 ### 更新日志
 
-
++ 2019.09
+  + 修改默认net core  System.Drawing 支持:CoreCompat。源文档：https://devblogs.microsoft.com/dotnet/net-core-image-processing/                              CoreCompat.System.Drawing, ImageSharp, and Magick.NET, and Mono 4.6.2 for SkiaSharp.
+  + 
+  + https://github.com/SixLabors/ImageSharp
+  + https://github.com/dlemstra/Magick.NET
+  + https://photosauce.net/
+  + http://freeimage.sourceforge.net/download.html
+  + https://github.com/CoreCompat/
+  + https://github.com/mono/SkiaSharp
 + 2019.08
-  + 1. 修改ImageAve，更新文档，计划完成水印部分。
-  + 2. 修改文档。
-  + 3. 修改ImgExif 提交代码，完成测试部分
-  + 4. ImgWaterMark 实现GIF加水印
+  + 修改ImageAve，更新文档，计划完成水印部分。
+  + 修改文档。
+  + 修改ImgExif 提交代码，完成测试部分
+  + ImgWaterMark 实现GIF加水印
 + 2019.06
-  + 1. 项目迁移。
-  + 2. 修改文档。
+  + 项目迁移。
+  + 修改文档。
 + 2019.05
     * 修改ImgAnimate 动画部分，完成测试
     * 修改ImgAnimate 动画部分，完成测试，提交代码
