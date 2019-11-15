@@ -64,14 +64,14 @@
  ** System.Drawing 存在动态Gif 生成动画图片失真的问题bug 目前无能力修改，望周知 **
  原项目：System.Drawing 已经替换，打算参考其他项目处理此问题
  
-
+### ImageSharp 新框架决定使用 [ImageSharp](https://github.com/SixLabors/ImageSharp)
 
 ### 更新日志
 + 2019.10
   + 所有主要类增加接口，但是没有全部完成。
   + 测试用例完善。 
 + 2019.09
-  + 修改默认net core  System.Drawing 支持:CoreCompat。源文档：https://devblogs.microsoft.com/dotnet/net-core-image-processing/                              CoreCompat.System.Drawing, ImageSharp, and Magick.NET, and Mono 4.6.2 for SkiaSharp.
+  + 修改默认net core  System.Drawing 支持:ImageSharp。源文档：https://devblogs.microsoft.com/dotnet/net-core-image-processing/                              CoreCompat.System.Drawing, ImageSharp, and Magick.NET, and Mono 4.6.2 for SkiaSharp.
   + 
   + https://github.com/SixLabors/ImageSharp
   + https://github.com/dlemstra/Magick.NET
