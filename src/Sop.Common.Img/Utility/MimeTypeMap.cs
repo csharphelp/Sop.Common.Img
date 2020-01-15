@@ -42,17 +42,27 @@ namespace Sop.Common.Img.Utility
         public static string GetMimeType(string fileName, string defaultMimeType = "application/octet-stream")
         {
             string extension = System.IO.Path.GetExtension(fileName)?.ToLower();
-            if (extension != null && !extension.StartsWith("."))
+            if (extension != null)
             {
-                extension = "." + extension;
-                if (!MimeTypeMap._mappings.Value.TryGetValue(extension, out var result))
-                    return defaultMimeType;
-                return result;
+                if (!extension.StartsWith("."))
+                {
+                    extension = "." + extension;
+                    if (!MimeTypeMap._mappings.Value.TryGetValue(extension, out var result))
+                        return defaultMimeType;
+                    return result;
+                }
+                else
+                {
+                    if (!MimeTypeMap._mappings.Value.TryGetValue(extension, out var result))
+                        return defaultMimeType;
+                    return result;
+                } 
+             
             }
             else
             {
                 return null;
-            } 
+            }
         }
         /// <summary>
         /// 获取扩展名

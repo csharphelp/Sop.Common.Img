@@ -67,6 +67,9 @@
 ### ImageSharp 新框架决定使用 [ImageSharp](https://github.com/SixLabors/ImageSharp)
 
 ### 更新日志
++ 2020.01
+  + 修改协议，MIT
+  + 测试用例完善。 
 + 2019.10
   + 所有主要类增加接口，但是没有全部完成。
   + 测试用例完善。 
@@ -94,4 +97,5 @@
 
 
 ## License
-[**GNU General Public License v3.0**](https://github.com/csharphelp/Sop.Common.Img/blob/master/LICENSE)
+ 
+[**MIT**](https://github.com/csharphelp/Sop.Common.Img/blob/master/LICENSE)

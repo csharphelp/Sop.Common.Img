@@ -65,7 +65,7 @@ namespace Sop.Common.Img.Servers
                         {
                             g.DrawImage(sourceImage, 0, 0, xWidth, yWidth);
                             sourceImage.Dispose();
-                            g.Dispose();
+                            g.Dispose(); 
                             newImage.Save(outputFile, myImageCodecInfo, myEncoderParameters);
                         }
                     }

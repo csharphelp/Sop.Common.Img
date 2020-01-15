@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;net461;net45;</TargetFrameworks>
+        <TargetFrameworks>netstandard2.0;net461;net472;</TargetFrameworks>
         <LangVersion>latest</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -46,6 +46,11 @@
     <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">        
     </ItemGroup>
     <ItemGroup>
+      <Compile Remove="IServer\**" />
+      <EmbeddedResource Remove="IServer\**" />
+      <None Remove="IServer\**" />
+    </ItemGroup>
+    <ItemGroup>
       <Compile Remove="ImgAnimate.cs" />
     </ItemGroup>
    
@@ -75,11 +80,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="IServer\" />
       <Folder Include="Properties\" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+      <PackageReference Include="SixLabors.ImageSharp">
+        <Version>1.0.0-beta0007</Version>
+      </PackageReference>
       <PackageReference Include="System.Drawing.Common">
         <Version>4.5.1</Version>
       </PackageReference>
@@ -91,6 +98,9 @@
     <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
       <PackageReference Include="ImageProcessor">
         <Version>2.7.0.100</Version>
+      </PackageReference>
+      <PackageReference Include="SixLabors.ImageSharp">
+        <Version>1.0.0-beta0007</Version>
       </PackageReference>
       <PackageReference Include="System.Drawing.Common">
         <Version>4.5.1</Version>

@@ -33,3 +33,14 @@ E:\Git\csharphelp\Sop.Common.Img\src\Tesseract\obj\Debug\net40\Tesseract.Assembl
 E:\Git\csharphelp\Sop.Common.Img\src\Tesseract\obj\Debug\net40\Tesseract.AssemblyInfo.cs
 E:\Git\csharphelp\Sop.Common.Img\src\Tesseract\obj\Debug\net40\Tesseract.dll
 E:\Git\csharphelp\Sop.Common.Img\src\Tesseract\obj\Debug\net40\Tesseract.pdb
+E:\Working\Sop.Common.Img\src\Tesseract\bin\Debug\net40\x64\liblept1753.dll
+E:\Working\Sop.Common.Img\src\Tesseract\bin\Debug\net40\x64\libtesseract3052.dll
+E:\Working\Sop.Common.Img\src\Tesseract\bin\Debug\net40\x86\liblept1753.dll
+E:\Working\Sop.Common.Img\src\Tesseract\bin\Debug\net40\x86\libtesseract3052.dll
+E:\Working\Sop.Common.Img\src\Tesseract\bin\Debug\net40\Tesseract.dll
+E:\Working\Sop.Common.Img\src\Tesseract\bin\Debug\net40\Tesseract.pdb
+E:\Working\Sop.Common.Img\src\Tesseract\obj\Debug\net40\Tesseract.csprojAssemblyReference.cache
+E:\Working\Sop.Common.Img\src\Tesseract\obj\Debug\net40\Tesseract.AssemblyInfoInputs.cache
+E:\Working\Sop.Common.Img\src\Tesseract\obj\Debug\net40\Tesseract.AssemblyInfo.cs
+E:\Working\Sop.Common.Img\src\Tesseract\obj\Debug\net40\Tesseract.dll
+E:\Working\Sop.Common.Img\src\Tesseract\obj\Debug\net40\Tesseract.pdb
