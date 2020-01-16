@@ -9,10 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sop.Common.Img.Tests", "Sop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tesseract", "Tesseract\Tesseract.csproj", "{53B49D68-CBCB-4A38-8A9C-EFE9D45336E3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageSharp", "ImageSharp\ImageSharp\ImageSharp.csproj", "{804F03A6-7403-4B7C-9B7A-A56DBB872CC0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SixLabors.Core", "ImageSharp\SixLabors.Core\SixLabors.Core.csproj", "{339E646F-B43A-4C96-BB25-514D3BC855B4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,14 +27,6 @@ Global
 		{53B49D68-CBCB-4A38-8A9C-EFE9D45336E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53B49D68-CBCB-4A38-8A9C-EFE9D45336E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53B49D68-CBCB-4A38-8A9C-EFE9D45336E3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{804F03A6-7403-4B7C-9B7A-A56DBB872CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{804F03A6-7403-4B7C-9B7A-A56DBB872CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{804F03A6-7403-4B7C-9B7A-A56DBB872CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{804F03A6-7403-4B7C-9B7A-A56DBB872CC0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{339E646F-B43A-4C96-BB25-514D3BC855B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{339E646F-B43A-4C96-BB25-514D3BC855B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{339E646F-B43A-4C96-BB25-514D3BC855B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{339E646F-B43A-4C96-BB25-514D3BC855B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

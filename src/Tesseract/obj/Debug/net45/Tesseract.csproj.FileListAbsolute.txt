@@ -43,3 +43,4 @@ E:\Working\Sop.Common.Img\src\Tesseract\obj\Debug\net45\Tesseract.AssemblyInfoIn
 E:\Working\Sop.Common.Img\src\Tesseract\obj\Debug\net45\Tesseract.AssemblyInfo.cs
 E:\Working\Sop.Common.Img\src\Tesseract\obj\Debug\net45\Tesseract.dll
 E:\Working\Sop.Common.Img\src\Tesseract\obj\Debug\net45\Tesseract.pdb
+E:\Working\Sop.Common.Img\src\Tesseract\obj\Debug\net45\Tesseract.csprojAssemblyReference.cache

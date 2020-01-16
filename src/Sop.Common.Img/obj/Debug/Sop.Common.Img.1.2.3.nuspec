@@ -32,6 +32,7 @@
         <dependency id="Tesseract" version="3.3.0" exclude="Build,Analyzers" />
         <dependency id="ImageProcessor" version="2.7.0.100" exclude="Build,Analyzers" />
         <dependency id="SixLabors.ImageSharp" version="1.0.0-beta0007" exclude="Build,Analyzers" />
+        <dependency id="SixLabors.ImageSharp.Drawing" version="1.0.0-beta0007" exclude="Build,Analyzers" />
         <dependency id="System.Drawing.Common" version="4.5.1" exclude="Build,Analyzers" />
         <dependency id="System.Reflection.Emit" version="4.3.0" exclude="Build,Analyzers" />
         <dependency id="System.Security.Permissions" version="4.5.0" exclude="Build,Analyzers" />
@@ -39,12 +40,14 @@
       </group>
       <group targetFramework=".NETFramework4.7.2">
         <dependency id="Tesseract" version="3.3.0" exclude="Build,Analyzers" />
+        <dependency id="SixLabors.ImageSharp.Drawing" version="1.0.0-beta0007" exclude="Build,Analyzers" />
         <dependency id="System.Reflection.Emit" version="4.3.0" exclude="Build,Analyzers" />
         <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
       </group>
       <group targetFramework=".NETStandard2.0">
         <dependency id="Tesseract" version="3.3.0" exclude="Build,Analyzers" />
         <dependency id="SixLabors.ImageSharp" version="1.0.0-beta0007" exclude="Build,Analyzers" />
+        <dependency id="SixLabors.ImageSharp.Drawing" version="1.0.0-beta0007" exclude="Build,Analyzers" />
         <dependency id="System.Drawing.Common" version="4.5.1" exclude="Build,Analyzers" />
         <dependency id="System.Reflection.Emit" version="4.3.0" exclude="Build,Analyzers" />
         <dependency id="System.Security.Permissions" version="4.5.0" exclude="Build,Analyzers" />
