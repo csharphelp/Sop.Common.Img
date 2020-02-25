@@ -1,4 +1,4 @@
-## 介绍  Sop.Common.Img
+## 介绍  Sop.Common.Img 新框架决定使用 [ImageSharp](https://github.com/SixLabors/ImageSharp) 修改中预计 5月份第一版
  > **请看 [七牛云的图片处理功能介绍文档了解本项目功能](https://developer.qiniu.com/dora/manual/3683/img-directions-for-use)**
 
 此项目是有https://github.com/Sopcce/.Net-Common-Utility中的一个小部分模块功能。此处拿出来单独维护
