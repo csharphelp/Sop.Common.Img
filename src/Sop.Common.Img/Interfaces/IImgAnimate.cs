@@ -5,7 +5,7 @@ namespace Sop.Common.Img
     /// <summary>
     /// 动图合成接口用于将数张图片合成 GIF
     /// </summary>
-    public interface IImgAnimate
+    public interface IAnimate
     {
         /// <summary>
         /// 生产动画图片（必须相同格式图片）

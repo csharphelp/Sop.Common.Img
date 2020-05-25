@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj": {}
+    "E:\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj": {}
   },
   "projects": {
-    "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj": {
+    "E:\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj",
+        "projectUniqueName": "E:\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj",
         "projectName": "Sop.Common.Img.Tests",
-        "projectPath": "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj",
+        "projectPath": "E:\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\Sop.Common.Img.Tests.csproj",
         "packagesPath": "C:\\Users\\sopcc\\.nuget\\packages\\",
-        "outputPath": "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\obj\\",
+        "outputPath": "E:\\Sop.Common.Img\\src\\Sop.Common.Img.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -25,13 +25,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/sixlabors/api/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj": {
-                "projectPath": "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj"
+              "E:\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj": {
+                "projectPath": "E:\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj"
               }
             }
           }
@@ -82,18 +83,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj": {
+    "E:\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj": {
       "version": "1.2.3",
       "restore": {
-        "projectUniqueName": "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj",
+        "projectUniqueName": "E:\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj",
         "projectName": "Sop.Common.Img",
-        "projectPath": "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj",
+        "projectPath": "E:\\Sop.Common.Img\\src\\Sop.Common.Img\\Sop.Common.Img.csproj",
         "packagesPath": "C:\\Users\\sopcc\\.nuget\\packages\\",
-        "outputPath": "E:\\Working\\Sop.Common.Img\\src\\Sop.Common.Img\\obj\\",
+        "outputPath": "E:\\Sop.Common.Img\\src\\Sop.Common.Img\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -104,33 +105,26 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net461",
           "net472",
           "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/sixlabors/api/v3/index.json": {}
         },
         "frameworks": {
-          "net461": {
-            "projectReferences": {
-              "E:\\Working\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj": {
-                "projectPath": "E:\\Working\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj"
-              }
-            }
-          },
           "net472": {
             "projectReferences": {
-              "E:\\Working\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj": {
-                "projectPath": "E:\\Working\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj"
+              "E:\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj": {
+                "projectPath": "E:\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj"
               }
             }
           },
           "netstandard2.0": {
             "projectReferences": {
-              "E:\\Working\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj": {
-                "projectPath": "E:\\Working\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj"
+              "E:\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj": {
+                "projectPath": "E:\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj"
               }
             }
           }
@@ -142,55 +136,22 @@
         }
       },
       "frameworks": {
-        "net461": {
+        "net472": {
           "dependencies": {
-            "ImageProcessor": {
+            "SixLabors.Core": {
               "target": "Package",
-              "version": "[2.7.0.100, )"
+              "version": "[1.0.0-beta0008, )"
             },
             "SixLabors.ImageSharp": {
               "target": "Package",
-              "version": "[1.0.0-beta0007, )"
+              "version": "[1.0.0-rc0001, )"
             },
             "SixLabors.ImageSharp.Drawing": {
               "target": "Package",
-              "version": "[1.0.0-beta0007, )"
-            },
-            "System.Drawing.Common": {
-              "target": "Package",
-              "version": "[4.5.1, )"
-            },
-            "System.Reflection.Emit": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            },
-            "System.Security.Permissions": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[1.0.0-beta0008, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
-        },
-        "net472": {
-          "dependencies": {
-            "SixLabors.ImageSharp.Drawing": {
-              "target": "Package",
-              "version": "[1.0.0-beta0007, )"
-            },
-            "System.Reflection.Emit": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         },
         "netstandard2.0": {
           "dependencies": {
@@ -200,29 +161,17 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "SixLabors.Core": {
+              "target": "Package",
+              "version": "[1.0.0-beta0008, )"
+            },
             "SixLabors.ImageSharp": {
               "target": "Package",
-              "version": "[1.0.0-beta0007, )"
+              "version": "[1.0.0-rc0001, )"
             },
             "SixLabors.ImageSharp.Drawing": {
               "target": "Package",
-              "version": "[1.0.0-beta0007, )"
-            },
-            "System.Drawing.Common": {
-              "target": "Package",
-              "version": "[4.5.1, )"
-            },
-            "System.Reflection.Emit": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            },
-            "System.Security.Permissions": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[1.0.0-beta0008, )"
             }
           },
           "imports": [
@@ -235,18 +184,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Working\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj": {
+    "E:\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj": {
       "version": "3.3.0",
       "restore": {
-        "projectUniqueName": "E:\\Working\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj",
+        "projectUniqueName": "E:\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj",
         "projectName": "Tesseract",
-        "projectPath": "E:\\Working\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj",
+        "projectPath": "E:\\Sop.Common.Img\\src\\Tesseract\\Tesseract.csproj",
         "packagesPath": "C:\\Users\\sopcc\\.nuget\\packages\\",
-        "outputPath": "E:\\Working\\Sop.Common.Img\\src\\Tesseract\\obj\\",
+        "outputPath": "E:\\Sop.Common.Img\\src\\Tesseract\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -264,7 +213,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/sixlabors/api/v3/index.json": {}
         },
         "frameworks": {
           "net20": {
@@ -288,13 +238,13 @@
       },
       "frameworks": {
         "net20": {
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         },
         "net40": {
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         },
         "net45": {
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         },
         "netstandard2.0": {
           "dependencies": {
@@ -319,7 +269,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

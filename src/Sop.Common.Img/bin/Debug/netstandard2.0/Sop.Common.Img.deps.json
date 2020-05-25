@@ -10,22 +10,14 @@
       "Sop.Common.Img/1.2.3": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "SixLabors.ImageSharp": "1.0.0-beta0007",
-          "SixLabors.ImageSharp.Drawing": "1.0.0-beta0007",
-          "System.Drawing.Common": "4.5.1",
-          "System.Reflection.Emit": "4.3.0",
-          "System.Security.Permissions": "4.5.0",
-          "System.ValueTuple": "4.5.0",
-          "Tesseract": "3.3.0",
-          "Microsoft.VisualBasic": "10.0.0.0",
-          "System.Data.Entity": "4.0.0.0",
-          "System.Runtime.Caching": "4.0.0.0"
+          "SixLabors.Core": "1.0.0-beta0008",
+          "SixLabors.ImageSharp": "1.0.0-rc0001",
+          "Tesseract": "3.3.0"
         },
         "runtime": {
           "Sop.Common.Img.dll": {}
         }
       },
-      "Microsoft.Net.Compilers.Toolset/3.1.0": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "NETStandard.Library/2.0.3": {
@@ -35,10 +27,10 @@
       },
       "SixLabors.Core/1.0.0-beta0008": {
         "dependencies": {
-          "System.Buffers": "4.4.0",
-          "System.Memory": "4.5.1",
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.3",
           "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "runtime": {
           "lib/netstandard2.0/SixLabors.Core.dll": {
@@ -47,22 +39,11 @@
           }
         }
       },
-      "SixLabors.Fonts/1.0.0-beta0009": {
+      "SixLabors.ImageSharp/1.0.0-rc0001": {
         "dependencies": {
-          "SixLabors.Core": "1.0.0-beta0008"
-        },
-        "runtime": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "SixLabors.ImageSharp/1.0.0-beta0007": {
-        "dependencies": {
-          "Microsoft.Net.Compilers.Toolset": "3.1.0",
-          "SixLabors.Core": "1.0.0-beta0008",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+          "System.Buffers": "4.5.0",
+          "System.Memory": "4.5.3",
+          "System.Numerics.Vectors": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/SixLabors.ImageSharp.dll": {
@@ -71,44 +52,11 @@
           }
         }
       },
-      "SixLabors.ImageSharp.Drawing/1.0.0-beta0007": {
-        "dependencies": {
-          "Microsoft.Net.Compilers.Toolset": "3.1.0",
-          "SixLabors.Fonts": "1.0.0-beta0009",
-          "SixLabors.ImageSharp": "1.0.0-beta0007",
-          "SixLabors.Shapes": "1.0.0-beta0009"
-        },
-        "runtime": {
-          "lib/netstandard2.0/SixLabors.ImageSharp.Drawing.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "SixLabors.Shapes/1.0.0-beta0009": {
-        "dependencies": {
-          "SixLabors.Core": "1.0.0-beta0008"
-        },
-        "runtime": {
-          "lib/netstandard2.0/SixLabors.Shapes.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "System.Buffers/4.4.0": {
+      "System.Buffers/4.5.0": {
         "runtime": {
           "lib/netstandard2.0/System.Buffers.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.25519.3"
-          }
-        }
-      },
-      "System.Drawing.Common/4.5.1": {
-        "runtime": {
-          "lib/netstandard2.0/System.Drawing.Common.dll": {
-            "assemblyVersion": "4.0.0.1",
-            "fileVersion": "4.6.26919.2"
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.6.26515.6"
           }
         }
       },
@@ -121,16 +69,16 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Memory/4.5.1": {
+      "System.Memory/4.5.3": {
         "dependencies": {
-          "System.Buffers": "4.4.0",
+          "System.Buffers": "4.5.0",
           "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {
-            "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.6.26606.5"
+            "assemblyVersion": "4.0.1.1",
+            "fileVersion": "4.6.27617.2"
           }
         }
       },
@@ -192,41 +140,11 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "assemblyVersion": "4.0.4.0",
-            "fileVersion": "0.0.0.0"
-          }
-        }
-      },
-      "System.Security.AccessControl/4.5.0": {
-        "dependencies": {
-          "System.Security.Principal.Windows": "4.5.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {
-            "assemblyVersion": "4.1.1.0",
-            "fileVersion": "4.6.26515.6"
-          }
-        }
-      },
-      "System.Security.Permissions/4.5.0": {
-        "dependencies": {
-          "System.Security.AccessControl": "4.5.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Permissions.dll": {
-            "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.6.26515.6"
-          }
-        }
-      },
-      "System.Security.Principal.Windows/4.5.0": {
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
-            "assemblyVersion": "4.1.1.0",
-            "fileVersion": "4.6.26515.6"
+            "assemblyVersion": "4.0.4.1",
+            "fileVersion": "4.6.26919.2"
           }
         }
       },
@@ -244,133 +162,12 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.ValueTuple/4.5.0": {},
       "Tesseract/3.3.0": {
         "dependencies": {
           "System.Reflection.Emit": "4.3.0"
         },
         "runtime": {
           "Tesseract.dll": {}
-        }
-      },
-      "Microsoft.VisualBasic/10.0.0.0": {
-        "runtime": {
-          "Microsoft.VisualBasic.dll": {
-            "assemblyVersion": "10.0.0.0",
-            "fileVersion": "14.6.1055.0"
-          }
-        }
-      },
-      "System.Data.Entity/4.0.0.0": {
-        "runtime": {
-          "System.Data.Entity.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "System.Runtime.Caching/4.0.0.0": {
-        "runtime": {
-          "System.Runtime.Caching.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "System.Windows.Forms/4.0.0.0": {
-        "runtime": {
-          "System.Windows.Forms.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "System.Deployment/4.0.0.0": {
-        "runtime": {
-          "System.Deployment.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "System.Management/4.0.0.0": {
-        "runtime": {
-          "System.Management.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "System.Runtime.Remoting/4.0.0.0": {
-        "runtime": {
-          "System.Runtime.Remoting.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "System.ComponentModel.DataAnnotations/4.0.0.0": {
-        "runtime": {
-          "System.ComponentModel.DataAnnotations.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "System.Configuration/4.0.0.0": {
-        "runtime": {
-          "System.Configuration.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "System.Security/4.0.0.0": {
-        "runtime": {
-          "System.Security.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "Accessibility/4.0.0.0": {
-        "runtime": {
-          "Accessibility.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "System.Runtime.Serialization.Formatters.Soap/4.0.0.0": {
-        "runtime": {
-          "System.Runtime.Serialization.Formatters.Soap.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "System.Configuration.Install/4.0.0.0": {
-        "runtime": {
-          "System.Configuration.Install.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
-        }
-      },
-      "Microsoft.JScript/10.0.0.0": {
-        "runtime": {
-          "Microsoft.JScript.dll": {
-            "assemblyVersion": "10.0.0.0",
-            "fileVersion": "14.6.1055.0"
-          }
-        }
-      },
-      "System.DirectoryServices/4.0.0.0": {
-        "runtime": {
-          "System.DirectoryServices.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.6.1055.0"
-          }
         }
       }
     }
@@ -381,24 +178,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Net.Compilers.Toolset/3.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-/iwBIkmusIUlBrln8AbKpYIcSGnImCYUMFSC3QOpGuOmnle44w2ORyH8IFDi8rbQNKjDH9HBmtPML/kW3GuxyA==",
-      "path": "microsoft.net.compilers.toolset/3.1.0",
-      "hashPath": "microsoft.net.compilers.toolset.3.1.0.nupkg.sha512"
-    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "sha512-5vV9z5QHruv5vJxl0SbBi8j2KqFfFvso1pqmP/bC0vB4C2aAXsB2T+Ca27K+IZJBK3tIdaGbSfJF0604+C1cyw==",
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Targets/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "sha512": "sha512-e0lV1vl4FXqNHcaxX+wS0JJWNCRW6B4dgI72NxIcCR1r8Vm+/sboj/lONjMbYjT7uYtP2pul2tUVPw5M+8eZMg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
@@ -416,230 +206,99 @@
       "path": "sixlabors.core/1.0.0-beta0008",
       "hashPath": "sixlabors.core.1.0.0-beta0008.nupkg.sha512"
     },
-    "SixLabors.Fonts/1.0.0-beta0009": {
+    "SixLabors.ImageSharp/1.0.0-rc0001": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jCSh8Ei/epW1zInmRReIovIzHGPB1zifwDaj4+Yb7aGCs5MbRHi69kl2+QM9Ov5X19IgKhHn833dd4S0OQ3sEw==",
-      "path": "sixlabors.fonts/1.0.0-beta0009",
-      "hashPath": "sixlabors.fonts.1.0.0-beta0009.nupkg.sha512"
+      "sha512": "sha512-lxQYvAv8vTp0QD1MafqUP1t8kbwy/2wolqHwymCMeozcfGNnYKNXlLSzwVQRoGXBOVRWgvU4f07hXCNmCLN4Ug==",
+      "path": "sixlabors.imagesharp/1.0.0-rc0001",
+      "hashPath": "sixlabors.imagesharp.1.0.0-rc0001.nupkg.sha512"
     },
-    "SixLabors.ImageSharp/1.0.0-beta0007": {
+    "System.Buffers/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-R7BMm1MPyE3n4kSmTrdhB6iQmIZmSjBhnHG8mYrfi9t5CmIIgXhmGHHLZTZHa17Ka4b5bhUUqssAVEHDlDqnuQ==",
-      "path": "sixlabors.imagesharp/1.0.0-beta0007",
-      "hashPath": "sixlabors.imagesharp.1.0.0-beta0007.nupkg.sha512"
-    },
-    "SixLabors.ImageSharp.Drawing/1.0.0-beta0007": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-luF+sbh2mMdQLa7W5icWsaqp3M3cAPF73Tv8hti7KVxBywKFFEibunqAUYUAJLTiuSpScnjYAhTqHYGuXBChmw==",
-      "path": "sixlabors.imagesharp.drawing/1.0.0-beta0007",
-      "hashPath": "sixlabors.imagesharp.drawing.1.0.0-beta0007.nupkg.sha512"
-    },
-    "SixLabors.Shapes/1.0.0-beta0009": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-H9c2mZ4JYHdkv1xFfU3f2kUE8qzzFrlc9tIPVewz/tqp3sZh91fvXZM520MaJGDvh/+BnsBnjEgkArZqDy36Yw==",
-      "path": "sixlabors.shapes/1.0.0-beta0009",
-      "hashPath": "sixlabors.shapes.1.0.0-beta0009.nupkg.sha512"
-    },
-    "System.Buffers/4.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
-      "path": "system.buffers/4.4.0",
-      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
-    },
-    "System.Drawing.Common/4.5.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
-      "path": "system.drawing.common/4.5.1",
-      "hashPath": "system.drawing.common.4.5.1.nupkg.sha512"
+      "sha512": "sha512-pL2ChpaRRWI/p4LXyy4RgeWlYF2sgfj/pnVMvBqwNFr5cXg7CXNnWZWxrOONLg8VGdFB8oB+EG2Qw4MLgTOe+A==",
+      "path": "system.buffers/4.5.0",
+      "hashPath": "system.buffers.4.5.0.nupkg.sha512"
     },
     "System.IO/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+      "sha512": "sha512-c3c4tJFZjEuwHNtx1CtySkUvRPPmxVNkOJo0dgybFUf3HhxPRcNYyEdqV3dipiSjFivczfxmT0nh/T50AjR4/g==",
       "path": "system.io/4.3.0",
       "hashPath": "system.io.4.3.0.nupkg.sha512"
     },
-    "System.Memory/4.5.1": {
+    "System.Memory/4.5.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sDJYJpGtTgx+23Ayu5euxG5mAXWdkDb4+b0rD0Cab0M1oQS9H0HXGPriKcqpXuiJDTV7fTp/d+fMDJmnr6sNvA==",
-      "path": "system.memory/4.5.1",
-      "hashPath": "system.memory.4.5.1.nupkg.sha512"
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "sha512": "sha512-0BzhnYAVxSPOOfEyy8wQLUubxVSqkra804ntQ6cUuxe75tI4jjaMj+4lGFyu6vTKXA/PHbmdVDnjA55z4IstGQ==",
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
     "System.Reflection/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
+      "sha512": "sha512-8D9EGb67J1KjauSx1sfACH92Xy1JA/ohsrTL9vqGXuK2iu2iiGeaIIrOOydFxdYItlmpHn7H0GORvdwzQb5D8Q==",
       "path": "system.reflection/4.3.0",
       "hashPath": "system.reflection.4.3.0.nupkg.sha512"
     },
     "System.Reflection.Emit/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+      "sha512": "sha512-aqXq3io477UsigumrUZdRIwDsu35XMTA3elemAIEVpOdqHCbMrroV7ekjxl3yaM49CHa/6O2gRLgPPYRMO8/eA==",
       "path": "system.reflection.emit/4.3.0",
       "hashPath": "system.reflection.emit.4.3.0.nupkg.sha512"
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
+      "sha512": "sha512-0V9unqRIRWWK/You2TR42pPhg9oQEcGvxASfnrkvdlByLHwr5dQT1NYV5npPiM1xbWgzAsa65JP/jhsSs/akgQ==",
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "hashPath": "system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512"
     },
     "System.Reflection.Primitives/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
+      "sha512": "sha512-g7/pvc8ElycOu8wArVf7+z0BvvjHHiZ8F6v6lOCU7hUYdNTzIIjs8TWnZlUBOYVQBHTkp5RG6429VFCxmhSXfA==",
       "path": "system.reflection.primitives/4.3.0",
       "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
     },
     "System.Runtime/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "sha512": "sha512-KZQR5yj+L2LbKJFJOYwsEc1P8iwkPX2t3ZuhekKxY/ONGuNIXXJ6Vocur/ZCivvwBCERUYlDbuf1O7A31YSoDw==",
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Zh8t8oqolRaFa9vmOZfdQm/qKejdqz0J9kr7o2Fu0vPeoH3BL1EOXipKWwkWtLT1JPzjByrF19fGuFlNbmPpiw==",
-      "path": "system.runtime.compilerservices.unsafe/4.5.1",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
-    },
-    "System.Security.AccessControl/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vW8Eoq0TMyz5vAG/6ce483x/CP83fgm4SJe5P8Tb1tZaobcvPrbMEL7rhH1DRdrYbbb6F0vq3OlzmK0Pkwks5A==",
-      "path": "system.security.accesscontrol/4.5.0",
-      "hashPath": "system.security.accesscontrol.4.5.0.nupkg.sha512"
-    },
-    "System.Security.Permissions/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-9gdyuARhUR7H+p5CjyUB/zPk7/Xut3wUSP8NJQB6iZr8L3XUXTMdoLeVAg9N4rqF8oIpE7MpdqHdDHQ7XgJe0g==",
-      "path": "system.security.permissions/4.5.0",
-      "hashPath": "system.security.permissions.4.5.0.nupkg.sha512"
-    },
-    "System.Security.Principal.Windows/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
-      "path": "system.security.principal.windows/4.5.0",
-      "hashPath": "system.security.principal.windows.4.5.0.nupkg.sha512"
+      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
+      "sha512": "sha512-b4DeKYjWcwot73rKMnmLZX+9PS9IuXznGs7rwVDWaxadXA3RHqCWRWVs3Ea8kHPG24blpmM2wyYvusyh7Mjr1Q==",
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
     },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
+      "sha512": "sha512-/gcqXMxxddXplKAxWGV5vY5PFyo1Z8XRcxCaLSS3DLI3Ai+Uaf757mwOf2pHQ7NnbMQimhcV1jaL4aOe9P+T8Q==",
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "System.ValueTuple/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
-      "path": "system.valuetuple/4.5.0",
-      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
-    },
     "Tesseract/3.3.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.VisualBasic/10.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Data.Entity/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Runtime.Caching/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Windows.Forms/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Deployment/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Management/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Runtime.Remoting/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.ComponentModel.DataAnnotations/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Configuration/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Security/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Accessibility/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Runtime.Serialization.Formatters.Soap/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Configuration.Install/4.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.JScript/10.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.DirectoryServices/4.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

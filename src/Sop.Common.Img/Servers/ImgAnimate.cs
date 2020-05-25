@@ -1,26 +1,25 @@
-﻿using System;
+﻿using Sop.Common.Img.Gif;
+using System;
 using System.Collections.Generic;
-using System.DrawingCore;
 using System.IO;
-using Sop.Common.Img.Gif;
 
 namespace Sop.Common.Img.Servers
 {
     /// <summary>
     /// 动图合成接口用于将数张图片合成 GIF
     /// </summary>
-    public class ImgAnimate : IImgAnimate
+    public class ImgAnimate : IAnimate
     {
         #region Instance
 
-        private static volatile IImgAnimate _instance = null;
+        private static volatile IAnimate _instance = null;
         private static readonly object Lock = new object();
 
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public static IImgAnimate Instance()
+        public static IAnimate Instance()
         {
             if (_instance == null)
             {
@@ -59,6 +58,7 @@ namespace Sop.Common.Img.Servers
                 {
                     File.Delete(outputPath);
                 }
+
                 AnimatedGifEncoder animatedGifEncoder = new AnimatedGifEncoder();
                 animatedGifEncoder.Start(outputPath);
                 animatedGifEncoder.SetDelay(delay);    // 延迟间隔

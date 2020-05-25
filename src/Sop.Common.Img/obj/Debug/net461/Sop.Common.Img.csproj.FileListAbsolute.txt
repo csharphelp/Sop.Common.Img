@@ -122,3 +122,8 @@ E:\Working\Sop.Common.Img\src\Sop.Common.Img\obj\Debug\net461\Sop.Common.Img.Ass
 E:\Working\Sop.Common.Img\src\Sop.Common.Img\obj\Debug\net461\Sop.Common.Img.csproj.CopyComplete
 E:\Working\Sop.Common.Img\src\Sop.Common.Img\obj\Debug\net461\Sop.Common.Img.dll
 E:\Working\Sop.Common.Img\src\Sop.Common.Img\obj\Debug\net461\Sop.Common.Img.pdb
+E:\Sop.Common.Img\src\Sop.Common.Img\obj\Debug\net461\Sop.Common.Img.csprojAssemblyReference.cache
+E:\Sop.Common.Img\src\Sop.Common.Img\obj\Debug\net461\Sop.Common.Img.AssemblyInfoInputs.cache
+E:\Sop.Common.Img\src\Sop.Common.Img\obj\Debug\net461\Sop.Common.Img.AssemblyInfo.cs
+E:\Sop.Common.Img\src\Sop.Common.Img\obj\Debug\net461\Sop.Common.Img.dll
+E:\Sop.Common.Img\src\Sop.Common.Img\obj\Debug\net461\Sop.Common.Img.pdb

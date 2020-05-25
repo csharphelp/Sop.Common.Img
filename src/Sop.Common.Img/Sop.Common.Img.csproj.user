@@ -7,8 +7,5 @@
     <Compile Update="Base\DeferredFileSystemWatcher.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="System.Drawing\System.Drawing.Printing\PrintDocument.cs">
-      <SubType>Component</SubType>
-    </Compile>
   </ItemGroup>
 </Project>
