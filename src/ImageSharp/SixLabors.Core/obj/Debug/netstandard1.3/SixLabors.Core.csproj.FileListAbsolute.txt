@@ -1,3 +1,0 @@
-E:\Working\Sop.Common.Img\src\ImageSharp\SixLabors.Core\obj\Debug\netstandard1.3\SixLabors.Core.csprojAssemblyReference.cache
-E:\Working\Sop.Common.Img\src\ImageSharp\SixLabors.Core\obj\Debug\netstandard1.3\SixLabors.Core.AssemblyInfoInputs.cache
-E:\Working\Sop.Common.Img\src\ImageSharp\SixLabors.Core\obj\Debug\netstandard1.3\SixLabors.Core.AssemblyInfo.cs

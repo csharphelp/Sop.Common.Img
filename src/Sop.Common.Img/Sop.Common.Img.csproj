@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;net472;</TargetFrameworks>
+        <TargetFrameworks>netstandard2.1;net472;</TargetFrameworks>
         <LangVersion>latest</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -41,13 +41,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="SixLabors.Core" Version="1.0.0-beta0008" />
-      <PackageReference Include="SixLabors.ImageSharp" Version="1.0.0-rc0001" />
-      <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta0008" />
-    </ItemGroup>
- 
-    <ItemGroup>
-      <ProjectReference Include="..\Tesseract\Tesseract.csproj" />
+      <PackageReference Include="SixLabors.ImageSharp" Version="1.0.3" />
+      <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta11" />
+      <PackageReference Include="Tesseract" Version="4.1.1" />
     </ItemGroup>
 
 </Project>

@@ -1,3 +1,0 @@
-E:\Working\Sop.Common.Img\src\ImageSharp\ImageSharp\obj\Debug\netcoreapp2.2\ImageSharp.csprojAssemblyReference.cache
-E:\Working\Sop.Common.Img\src\ImageSharp\ImageSharp\obj\Debug\netcoreapp2.2\ImageSharp.AssemblyInfoInputs.cache
-E:\Working\Sop.Common.Img\src\ImageSharp\ImageSharp\obj\Debug\netcoreapp2.2\ImageSharp.AssemblyInfo.cs
